@@ -10,3 +10,10 @@ else if (ticket2.length ==12){
 else {
 	console.log("Билет не определен");
 }
+
+/////
+function typeOfIvent(str) {
+    let digitsFromStr = str.replace(/[a-zA-Z\-\:]/gi, '').length;
+    return digitsFromStr === 8 ? 'Выбран билет на концерт' :
+        digitsFromStr === 12 ? 'Выбран билет в театр' : 'Билет не определен';
+}
