@@ -1,0 +1,1 @@
+console.log((message.toLowerCase()).startsWith("привет"));
