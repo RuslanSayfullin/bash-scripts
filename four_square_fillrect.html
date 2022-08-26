@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <canvas id='root'></canvas>
+      <script>
+        let canvas = document.getElementById("root");
+        let ctx = canvas.getContext("2d");
+        ctx.beginPath();
+        ctx.fillStyle = '#ff3d00';
+        ctx.fillRect(10, 10, 100, 100);
+        ctx.fillStyle = '#0bdd38';
+        ctx.fillRect(120, 10, 100, 100);
+        ctx.fillStyle = '#2e77da';
+        ctx.fillRect(10, 120, 100, 100);
+        ctx.fillStyle = '#ffd200';
+        ctx.fillRect(120, 120, 100, 100);
+      </script>
+</body>
+</html>

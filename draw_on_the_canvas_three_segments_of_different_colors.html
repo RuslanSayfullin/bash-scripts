@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <canvas id="root" width="300" height="300"></canvas>
+      <script>
+            let canvas = document.getElementById("root");
+            let ctx = canvas.getContext("2d");
+            ctx.beginPath();
+            ctx.moveTo(100, 100);
+            ctx.lineTo(200, 100);
+            ctx.strokeStyle = '#e74c3c';
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(100, 125);
+            ctx.lineTo(200, 125);
+            ctx.strokeStyle = '#16a085';
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(100, 150);
+            ctx.lineTo(200, 150);
+            ctx.strokeStyle = '#2980b9';
+            ctx.stroke();
+      </script>
+</body>
+</html>
