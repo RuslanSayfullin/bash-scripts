@@ -5,8 +5,7 @@ function count(array) {
     for (let index = 0; index < array.length; index++) {
         count +=1;
     }
-    result = ( + count);
-    console.log(result);
+    console.log(count);
 }
 
 count(array)

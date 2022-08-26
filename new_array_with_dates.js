@@ -9,3 +9,8 @@ function printDates(dates) {
 }
 
 printDates(dates)
+
+//2 вариант
+let reg = /\./g;
+let NewFormat = dates.replace(reg, '/');
+console.log(NewFormat.split(' '));
