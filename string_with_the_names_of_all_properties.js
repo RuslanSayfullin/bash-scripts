@@ -6,6 +6,12 @@ let employees = {
     getSalary() { console.log(employees.ratePerDay * employees.workingDays )}
 }
 
-let objj = Object.keys(employees);
-let result = (objj.replace(/\./g, ', '));
-console.log(result);
+let newArr = [];
+for (let [key, value] of Object.entries(employees)) {
+    if (typeof(value) !== 'function' ) {
+        newArr.push([key])
+    }
+};
+newArr = newArr.reduce((prev, current)=> prev.concat(current), [])
+let str = newArr.join(', ')
+console.log(str)
